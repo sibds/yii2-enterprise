@@ -14,7 +14,7 @@ INSTALLATION
 
 ### Install from an Archive File
 
-Extract the github archive file to a directory named `yii2-starter-kit` that is directly under the Web root.
+Extract the github archive file to a directory named `yii2-enterprise` that is directly under the Web root.
 
 After extraction run
 ```
@@ -25,7 +25,7 @@ php composer.phar install
 You can then access the application through the following URL:
 
 ~~~
-http://localhost/yii2-starter-kit/web/
+http://localhost/yii2-enterprise/project/web/
 ~~~
 
 
@@ -37,7 +37,7 @@ at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 You can then install this application template using the following command:
 
 ~~~
-php composer.phar create-project --prefer-dist --stability=dev trntv/yii2-starter-kit
+php composer.phar create-project --prefer-dist --stability=dev sibds/yii2-enterprise
 ~~~
 
 CONFIGURATION
@@ -50,9 +50,9 @@ Edit the file `environments/local/common/config/_db.php` with real data, for exa
 ```php
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2-starter-kit',
+    'dsn' => 'mysql:host=localhost;dbname=yii2-enterprise',
     'username' => 'root',
-    'password' => '1234',
+    'password' => '123',
     'charset' => 'utf8',
 ];
 ```
@@ -63,8 +63,7 @@ Also check and edit the other files in the `config/` directory to customize your
 ### Application urls
 Edit the file `environments/local/common/config/_aliases.php`
 ```php
-Yii::setAlias('@frontendUrl', 'http://example.com');
-Yii::setAlias('@backendUrl', 'http://backend.example.com');
+Yii::setAlias('@baseUrl', 'http://example.com');
 Yii::setAlias('@storageUrl', 'http://storage.example.com');
 ```
 #### Apply migrations
