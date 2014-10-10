@@ -1,0 +1,73 @@
+{
+    "author": "Vadim Mazur <vmazur@sibds.com>",
+    "name": "sibds/yii2-enterprise",
+    "description": "Yii 2 Enterprise Application Template",
+    "keywords": ["yii2", "framework", "start", "enterprise", "application template"],
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/sibds/yii2-enterprise/issues?state=open",
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "http://www.yiiframework.com/wiki/",
+        "source": "https://github.com/sibds/yii2-enterprise"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "ext-intl": "*",
+        "ext-mcrypt": "*",
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-swiftmailer": "*",
+        "asofter/yii2-imperavi-redactor": "*",
+        "yiisoft/yii2-jui": "*",
+        "yiisoft/yii2-imagine": "*",
+        "mihaildev/yii2-elfinder": "*",
+        "trntv/yii2-aceeditor": "*",
+        "trntv/system-info": "*",
+        "trntv/yii2-file-kit": "*"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "*",
+        "trntv/yii2-deploy": "*"
+    },
+    "suggest": {
+        "ext-gmagick": "Gmagick PHP Extension"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://github.com/trntv/system-info.git"
+        }
+    ],
+    "config": {
+        "process-timeout": 1800
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "yii\\composer\\Installer::postCreateProject"
+        ]
+    },
+    "extra": {
+        "yii\\composer\\Installer::postCreateProject": {
+            "setPermission": [
+                {
+                    "project/runtime": "0777",
+                    "console/runtime": "0777",
+                    "project/web/assets": "0777",
+                    "storage": "0777",
+                    "environments/local/project/yii": "0755",
+                    "environments/local/console/yii": "0755"
+                }
+            ],
+            "generateCookieValidationKey": [
+                "project/config/main.php"
+            ]
+        },
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}
