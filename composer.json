@@ -13,34 +13,17 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=5.6.0",
         "ext-intl": "*",
-        "ext-mcrypt": "*",
         "yiisoft/yii2": "*",
         "yiisoft/yii2-bootstrap": "*",
-        "yiisoft/yii2-swiftmailer": "*",
-        "asofter/yii2-imperavi-redactor": "*",
-        "yiisoft/yii2-jui": "*",
-        "yiisoft/yii2-imagine": "*",
-        "mihaildev/yii2-elfinder": "*",
-        "trntv/yii2-aceeditor": "*",
-        "trntv/system-info": "*",
-        "trntv/yii2-file-kit": "*"
+        "yiisoft/yii2-swiftmailer": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "*",
         "yiisoft/yii2-gii": "*",
         "trntv/yii2-deploy": "*"
     },
-    "suggest": {
-        "ext-gmagick": "Gmagick PHP Extension"
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url":  "https://github.com/trntv/system-info.git"
-        }
-    ],
     "config": {
         "process-timeout": 1800
     },
