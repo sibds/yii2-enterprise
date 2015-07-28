@@ -7,13 +7,11 @@
     "license": "BSD-3-Clause",
     "support": {
         "issues": "https://github.com/sibds/yii2-enterprise/issues?state=open",
-        "forum": "http://www.yiiframework.com/forum/",
-        "wiki": "http://www.yiiframework.com/wiki/",
         "source": "https://github.com/sibds/yii2-enterprise"
     },
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.6.0",
+        "php": ">=5.4.0",
         "ext-intl": "*",
         "yiisoft/yii2": "*",
         "yiisoft/yii2-bootstrap": "*",
