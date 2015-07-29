@@ -10,7 +10,7 @@
 
 # composer
 composer.phar
-composer.lock
+#composer.lock
 
 # IDE
 # phpstorm project files
@@ -37,3 +37,6 @@ Thumbs.db
 phpunit.phar
 # local phpunit config
 /phpunit.xml
+
+### Vagrant ###
+.vagrant/

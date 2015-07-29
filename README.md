@@ -66,6 +66,23 @@ MODULES INCLUDED
 * [*dektrium/yii2-user*](http://yii2-user.dmeroff.ru/);
 * [*dektrium/yii2-rbac*](https://github.com/dektrium/yii2-rbac).
 
+VIRTUAL MACHINE
+---------------
+
+**Important:** Only for testing.
+
+Created on [PuPHPet.com](http://puphpet.com).
+
+### How to
+
+```
+vagrant up
+```
+
+### MailCatcher
+
+
+
 INSTALLATION
 ------------
 
