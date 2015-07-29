@@ -40,3 +40,6 @@ phpunit.phar
 
 ### Vagrant ###
 .vagrant/
+
+### PuPHPet ###
+html/
