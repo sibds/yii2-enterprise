@@ -263,6 +263,7 @@ php:
             - curl
             - imagick
             - gd
+            - sqlite
         pear: {  }
         pecl: {  }
     ini:

@@ -1,17 +1,12 @@
-actor: Tester
+include:
+  - tests/codeception/common
+  - tests/codeception/console
+  - tests/codeception/backend
+  - tests/codeception/api
+  - tests/codeception/frontend
+
 paths:
-    tests: tests
-    log: tests/_output
-    data: tests/_data
-    helpers: tests/_support
+  log: tests/codeception/_output
+
 settings:
-    bootstrap: _bootstrap.php
-    colors: true
-    memory_limit: 1024M
-modules:
-    config:
-        Db:
-            dsn: 'sqlite:tests/_output/temp.db'
-            user: ''
-            password: ''
-            dump: tests/_data/dump.sql
+  colors: true
