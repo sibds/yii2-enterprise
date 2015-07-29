@@ -62,9 +62,10 @@ tests                    contains various tests for the advanced application
 MODULES INCLUDED
 ----------------
 
-* [*bedezign/yii2-audit*](https://bedezign.github.io/yii2-audit/);
-* [*dektrium/yii2-user*](http://yii2-user.dmeroff.ru/);
-* [*dektrium/yii2-rbac*](https://github.com/dektrium/yii2-rbac).
+* [*bedezign/yii2-audit*](https://bedezign.github.io/yii2-audit/) - Records and displays web/cli requests, database changes, php/js errors and associated data.;
+* [*dektrium/yii2-user*](http://yii2-user.dmeroff.ru/) - Flexible user registration and authentication module for Yii2;
+* [*dektrium/yii2-rbac*](https://github.com/dektrium/yii2-rbac) - Yii 2 module that helps managing your RBAC system;
+* [*dmstr/yii2-adminlte-asset*](https://github.com/dmstr/yii2-adminlte-asset) - AdminLTE Asset Bundle for Backend Theme.
 
 VIRTUAL MACHINE
 ---------------
