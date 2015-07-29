@@ -9,6 +9,7 @@ Basis on [wfcreations/yii2-app-api](https://github.com/wfcreations/yii2-app-api)
 [![Latest Stable Version](https://poser.pugx.org/sibds/yii2-enterprise/v/stable)](https://packagist.org/packages/sibds/yii2-enterprise) [![Total Downloads](https://poser.pugx.org/sibds/yii2-enterprise/downloads)](https://packagist.org/packages/sibds/yii2-enterprise) [![Latest Unstable Version](https://poser.pugx.org/sibds/yii2-enterprise/v/unstable)](https://packagist.org/packages/sibds/yii2-enterprise) [![License](https://poser.pugx.org/sibds/yii2-enterprise/license)](https://packagist.org/packages/sibds/yii2-enterprise)
 
 Travis CI: [![Build Status](https://travis-ci.org/sibds/yii2-enterprise.svg?branch=master)](https://travis-ci.org/sibds/yii2-enterprise)
+
 Scrunitizer:
 [![Build Status](https://scrutinizer-ci.com/g/sibds/yii2-enterprise/badges/build.png?b=master)](https://scrutinizer-ci.com/g/sibds/yii2-enterprise/build-status/master)
 [![Code Coverage](https://scrutinizer-ci.com/g/sibds/yii2-enterprise/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/sibds/yii2-enterprise/?branch=master)
