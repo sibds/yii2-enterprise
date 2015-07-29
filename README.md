@@ -7,6 +7,10 @@ Basis on [wfcreations/yii2-app-api](https://github.com/wfcreations/yii2-app-api)
 
 [![Latest Stable Version](https://poser.pugx.org/sibds/yii2-enterprise/v/stable)](https://packagist.org/packages/sibds/yii2-enterprise) [![Total Downloads](https://poser.pugx.org/sibds/yii2-enterprise/downloads)](https://packagist.org/packages/sibds/yii2-enterprise) [![Latest Unstable Version](https://poser.pugx.org/sibds/yii2-enterprise/v/unstable)](https://packagist.org/packages/sibds/yii2-enterprise) [![License](https://poser.pugx.org/sibds/yii2-enterprise/license)](https://packagist.org/packages/sibds/yii2-enterprise)
 
+[![Build Status](https://travis-ci.org/sibds/yii2-enterprise.svg?branch=master)](https://travis-ci.org/sibds/yii2-enterprise)
+
+Information about develop: [https://trello.com/b/9VO2RT9g/yii2-enterprise](https://trello.com/b/9VO2RT9g/yii2-enterprise).
+
 REQUIREMENTS
 ------------
 
