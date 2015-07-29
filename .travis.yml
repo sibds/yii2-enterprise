@@ -1,0 +1,24 @@
+language: php
+
+php:
+  - 5.4
+  - 5.5
+  - 5.6
+  - hhvm
+
+install:
+  - composer self-update
+  - composer global require fxp/composer-asset-plugin:~1.0
+  - composer install
+
+#before_script:
+#  - mysql -e 'create database yii2_translateable_test;'
+
+script:
+  - "wget http://codeception.com/codecept.phar"
+  - php ./codecept.phar build
+  - php ./codecept.phar run --coverage --xml
+
+after_script:
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover tests/_output/report.xml
