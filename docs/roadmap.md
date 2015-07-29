@@ -1,6 +1,8 @@
 Roadmap for developers
 ======================
 
+**Note:** The Roadmap is still in development.
+
 Version 0.1
 -----------
 * Basic test on codeception for build in Scrutinizer
