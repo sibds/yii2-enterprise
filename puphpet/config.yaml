@@ -3,15 +3,15 @@ vagrantfile:
     vm:
         box: puphpet/ubuntu1404-x64
         box_url: puphpet/ubuntu1404-x64
-        hostname: local.puphpet
+        hostname: yii2enterprise.puphpet
         memory: '512'
         cpus: '1'
         chosen_provider: virtualbox
         network:
             private_network: 192.168.56.101
             forwarded_port:
-                vflnp_01vsu5zoispy:
-                    host: '9400'
+                vflnp_tsnxat56cyy3:
+                    host: '5799'
                     guest: '22'
         post_up_message: ''
         provider:
@@ -33,7 +33,7 @@ vagrantfile:
                     - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
                     - '--parser future'
         synced_folder:
-            vflsf_hed8ldiu3haz:
+            vflsf_58stmsryzj0v:
                 source: ./
                 target: /var/www
                 sync_type: default
@@ -71,6 +71,7 @@ server:
     install: '1'
     packages:
         - mc
+        - curl
 users_groups:
     install: '1'
     groups: {  }
@@ -96,7 +97,7 @@ nginx:
         proxy_buffers: '4 256k'
     upstreams: {  }
     vhosts:
-        nxv_s977ssrwiiae:
+        nxv_sx3u5pn0y04j:
             server_name: awesome.dev
             server_aliases:
                 - www.awesome.dev
@@ -116,7 +117,7 @@ nginx:
             rewrite_to_https: '1'
             spdy: '1'
             locations:
-                nxvl_dzdegxembayp:
+                nxvl_7hfceaaunkja:
                     location: /
                     autoindex: 'off'
                     try_files:
@@ -126,7 +127,7 @@ nginx:
                     fastcgi: ''
                     fastcgi_index: ''
                     fastcgi_split_path: ''
-                nxvl_l7ipmn1n9km4:
+                nxvl_zo5pvynspvmp:
                     location: '~ \.php$'
                     autoindex: 'off'
                     try_files:
@@ -153,10 +154,10 @@ apache:
         - proxy_fcgi
         - rewrite
     vhosts:
-        av_oftpzl8dvefq:
-            servername: yii2-enterprise.dev
+        av_kti64s6jfdpz:
+            servername: yii2enterprise.dev
             serveraliases:
-                - www.yii2-enterprise.dev
+                - www.yii2enterprise.dev
             docroot: /var/www/backend/web
             port: '80'
             setenv:
@@ -170,7 +171,7 @@ apache:
             ssl_protocol: ''
             ssl_cipher: ''
             directories:
-                avd_4z971hw5kxcb:
+                avd_ykewpscy3yig:
                     path: /var/www/backend/web
                     options:
                         - Indexes
@@ -182,14 +183,14 @@ apache:
                         - 'all granted'
                     custom_fragment: ''
                     files_match:
-                        avdfm_9gr7pn2q2zw7:
+                        avdfm_4e1fawaqh611:
                             path: \.php$
                             sethandler: 'proxy:fcgi://127.0.0.1:9000'
                             custom_fragment: ''
                             provider: filesmatch
                     provider: directory
-        av_7256quacaspd:
-            servername: frontend.yii2-enterprise.dev
+        av_zqeo7luyz75g:
+            servername: frontend.yii2enterprise.dev
             docroot: /var/www/frontend/web
             port: '80'
             custom_fragment: ''
@@ -201,7 +202,7 @@ apache:
             ssl_protocol: ''
             ssl_cipher: ''
             directories:
-                avd_t9vp9j8yb3vt:
+                avd_j00veii0vkdf:
                     path: /var/www/frontend/web
                     options:
                         - Indexes
@@ -213,14 +214,14 @@ apache:
                         - 'all granted'
                     custom_fragment: ''
                     files_match:
-                        avdfm_jzrgeh1z6t17:
+                        avdfm_7qxf9qqdu9l6:
                             path: \.php$
                             sethandler: 'proxy:fcgi://127.0.0.1:9000'
                             custom_fragment: ''
                             provider: filesmatch
                     provider: directory
-        av_3zvu7id4wzc6:
-            servername: api.yii2-enterprise.dev
+        av_ryx7i3gg5hv3:
+            servername: api.yii2enterprise.dev
             docroot: /var/www/api/web
             port: '80'
             custom_fragment: ''
@@ -232,7 +233,7 @@ apache:
             ssl_protocol: ''
             ssl_cipher: ''
             directories:
-                avd_eoyiyuecdfph:
+                avd_b8v5lqlztflr:
                     path: /var/www/api/web
                     options:
                         - Indexes
@@ -244,7 +245,7 @@ apache:
                         - 'all granted'
                     custom_fragment: ''
                     files_match:
-                        avdfm_1b2tzmymc9iq:
+                        avdfm_3ohf70gl6h7d:
                             path: \.php$
                             sethandler: 'proxy:fcgi://127.0.0.1:9000'
                             custom_fragment: ''
@@ -272,7 +273,7 @@ php:
     fpm_ini:
         error_log: /var/log/php-fpm.log
     fpm_pools:
-        phpfp_ix9q4m25r6k9:
+        phpfp_k86ak02bh5it:
             ini:
                 prefix: www
                 listen: '127.0.0.1:9000'
@@ -345,15 +346,18 @@ mysql:
         override_options: {  }
     adminer: '1'
     users:
-        mysqlnu_uft73n4v2gpi:
+        mysqlnu_9vv2m6ixkm09:
             name: dbuser
             password: '123'
     databases:
-        mysqlnd_bpbnmkgrma93:
+        mysqlnd_udecxn6ysqeq:
             name: yii2enterprise
             sql: ''
+        mysqlnd_wi2rs71i995l:
+            name: yii2_enterprise_tests
+            sql: ''
     grants:
-        mysqlng_ly46x0ecrh97:
+        mysqlng_9curk918xwex:
             user: dbuser
             table: '*.*'
             privileges:
@@ -366,15 +370,15 @@ mariadb:
         override_options: {  }
     adminer: 0
     users:
-        mariadbnu_5rtcaeuax6fl:
+        mariadbnu_lkrbw6asxael:
             name: dbuser
             password: '123'
     databases:
-        mariadbnd_vawpgaz0j0dx:
+        mariadbnd_chiha63r4hns:
             name: dbname
             sql: ''
     grants:
-        mariadbng_y4izbyewxxzc:
+        mariadbng_92upqckj7dgm:
             user: dbuser
             table: '*.*'
             privileges:

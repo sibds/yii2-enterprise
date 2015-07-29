@@ -43,3 +43,4 @@ phpunit.phar
 
 ### PuPHPet ###
 html/
+tests/_output/*

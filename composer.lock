@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5295577d7208deb8dcec5eb9b9fe4924",
+    "hash": "dc9565d46e2d1458e618c64d451cd92a",
     "packages": [
         {
             "name": "2amigos/yii2-chartjs-widget",
@@ -3311,7 +3311,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "dektrium/yii2-user": 20,
-        "dektrium/yii2-rbac": 20
+        "dektrium/yii2-rbac": 20,
+        "yiisoft/yii2-codeception": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
