@@ -5,6 +5,7 @@ Yii 2 Enterprise Application Template is a skeleton Yii 2 application best for r
 
 Basis on [wfcreations/yii2-app-api](https://github.com/wfcreations/yii2-app-api)
 
+[![GitHub stars](https://img.shields.io/github/stars/sibds/yii2-enterprise.svg)](https://github.com/sibds/yii2-enterprise/stargazers)
 [![Latest Stable Version](https://poser.pugx.org/sibds/yii2-enterprise/v/stable)](https://packagist.org/packages/sibds/yii2-enterprise) [![Total Downloads](https://poser.pugx.org/sibds/yii2-enterprise/downloads)](https://packagist.org/packages/sibds/yii2-enterprise) [![Latest Unstable Version](https://poser.pugx.org/sibds/yii2-enterprise/v/unstable)](https://packagist.org/packages/sibds/yii2-enterprise) [![License](https://poser.pugx.org/sibds/yii2-enterprise/license)](https://packagist.org/packages/sibds/yii2-enterprise)
 
 Travis CI: [![Build Status](https://travis-ci.org/sibds/yii2-enterprise.svg?branch=master)](https://travis-ci.org/sibds/yii2-enterprise)
@@ -87,7 +88,7 @@ vagrant up
 
 ### MailCatcher
 
-Open in browser:
+Open in browser: [http://192.168.56.101:1080/](http://192.168.56.101:1080/)
 
 
 INSTALLATION
