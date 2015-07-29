@@ -1,5 +1,4 @@
 {
-    "author": "Vadim Mazur <vmazur@sibds.com>",
     "name": "sibds/yii2-enterprise",
     "description": "Yii 2 Enterprise Application Template",
     "keywords": ["yii2", "framework", "start", "enterprise", "application template"],
@@ -9,43 +8,37 @@
         "issues": "https://github.com/sibds/yii2-enterprise/issues?state=open",
         "source": "https://github.com/sibds/yii2-enterprise"
     },
+    "authors": [
+        {
+            "name": "Vadim Mazur",
+            "email": "mazurva@gmail.com",
+            "homepage": "http://sibds.com"
+        }
+    ],
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0",
-        "ext-intl": "*",
-        "yiisoft/yii2": "*",
+        "yiisoft/yii2": ">=2.0.6",
         "yiisoft/yii2-bootstrap": "*",
-        "yiisoft/yii2-swiftmailer": "*"
+        "yiisoft/yii2-swiftmailer": "*",
+        "bedezign/yii2-audit": "^1.0",
+        "dektrium/yii2-user": "^1.0@dev",
+        "dektrium/yii2-rbac": "dev-master",
+        "dmstr/yii2-adminlte-asset": "2.*"
     },
     "require-dev": {
+        "yiisoft/yii2-codeception": "*",
         "yiisoft/yii2-debug": "*",
         "yiisoft/yii2-gii": "*",
-        "trntv/yii2-deploy": "*"
+        "yiisoft/yii2-faker": "*",
+        "mdmsoft/yii2-gii": "~1.0",
+        "johnitvn/yii2-ajaxcrud": "*",
+        "mootensai/yii2-enhanced-gii": "*"
     },
     "config": {
         "process-timeout": 1800
     },
-    "scripts": {
-        "post-create-project-cmd": [
-            "yii\\composer\\Installer::postCreateProject"
-        ]
-    },
     "extra": {
-        "yii\\composer\\Installer::postCreateProject": {
-            "setPermission": [
-                {
-                    "project/runtime": "0777",
-                    "console/runtime": "0777",
-                    "project/web/assets": "0777",
-                    "storage": "0777",
-                    "environments/local/project/yii": "0755",
-                    "environments/local/console/yii": "0755"
-                }
-            ],
-            "generateCookieValidationKey": [
-                "project/config/main.php"
-            ]
-        },
         "asset-installer-paths": {
             "npm-asset-library": "vendor/npm",
             "bower-asset-library": "vendor/bower"

@@ -1,8 +1,25 @@
 <?php
 
 return [
+    'name' => 'yii2-enterprise',
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
+    'modules'=>[
+        /*'audit' => 'bedezign\yii2\audit\Audit',
+        'user' => [
+            'class' => 'dektrium\user\Module',
+            'confirmWithin' => 21600,
+            'cost' => 12,
+            'admins' => ['admin']
+        ],
+        'rbac' => [
+            'class' => 'dektrium\rbac\Module',
+        ],
+        */
+    ],
     'components' => [
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager',
+        ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
@@ -10,9 +27,11 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
         ],
-        'user' => [
-            'identityClass' => 'common\models\User',
-            'enableAutoLogin' => true,
+        'errorHandler' => [
+            // web error handler
+            'class' => '\bedezign\yii2\audit\components\web\ErrorHandler',
+            // console error handler
+            //'class' => '\bedezign\yii2\audit\components\console\ErrorHandler',
         ],
     ],
 ];

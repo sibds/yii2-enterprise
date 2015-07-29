@@ -5,6 +5,8 @@ Yii 2 Enterprise Application Template is a skeleton Yii 2 application best for r
 
 Basis on [wfcreations/yii2-app-api](https://github.com/wfcreations/yii2-app-api)
 
+[![Latest Stable Version](https://poser.pugx.org/sibds/yii2-enterprise/v/stable)](https://packagist.org/packages/sibds/yii2-enterprise) [![Total Downloads](https://poser.pugx.org/sibds/yii2-enterprise/downloads)](https://packagist.org/packages/sibds/yii2-enterprise) [![Latest Unstable Version](https://poser.pugx.org/sibds/yii2-enterprise/v/unstable)](https://packagist.org/packages/sibds/yii2-enterprise) [![License](https://poser.pugx.org/sibds/yii2-enterprise/license)](https://packagist.org/packages/sibds/yii2-enterprise)
+
 REQUIREMENTS
 ------------
 
@@ -57,6 +59,13 @@ tests                    contains various tests for the advanced application
     codeception/         contains tests developed with Codeception PHP Testing Framework
 ```
 
+MODULES INCLUDED
+----------------
+
+* [*bedezign/yii2-audit*](https://bedezign.github.io/yii2-audit/);
+* [*dektrium/yii2-user*](http://yii2-user.dmeroff.ru/);
+* [*dektrium/yii2-rbac*](https://github.com/dektrium/yii2-rbac).
+
 INSTALLATION
 ------------
 
@@ -66,14 +75,14 @@ Extract the github archive file to a directory named `yii2-enterprise` that is d
 
 After extraction run
 ```
-php composer.phar global require "fxp/composer-asset-plugin:1.0.0-beta1"
+php composer.phar global require "fxp/composer-asset-plugin:1.0.0"
 php composer.phar install
 ```
 
 You can then access the application through the following URL:
 
 ~~~
-http://localhost/yii2-enterprise/project/web/
+http://localhost/yii2-enterprise/frontend/web/
 ~~~
 
 
@@ -121,8 +130,27 @@ Also check and edit the other files in the `config/` directory to customize your
 #### Apply migrations
 
 ```php
-php console/yii migrate
+php yii migrate
 ```
+
+Yii2-audit
+
+```php
+php yii migrate --migrationPath=@bedezign/yii2/audit/migrations
+```
+
+Yii2-user
+
+```php
+php yii migrate/up --migrationPath=@vendor/dektrium/yii2-user/migrations
+```
+
+Yii2-rbac
+
+```php
+php yii migrate/up --migrationPath=@yii/rbac/migrations
+```
+
 
 ### Initial RBAC config
 

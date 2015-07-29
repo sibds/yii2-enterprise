@@ -1,9 +1,9 @@
 # Application
-/environments/*
-!/environments/local
+#/environments/*
+#!/environments/local
 
-# Storage
-/storage/uploads
+# yii console command
+/yii
 
 # composer vendor dir
 /vendor
@@ -13,8 +13,13 @@ composer.phar
 composer.lock
 
 # IDE
+# phpstorm project files
 .idea
+
+# netbeans project files
 nbproject
+
+# zend studio for eclipse project files
 .buildpath
 .project
 .settings
