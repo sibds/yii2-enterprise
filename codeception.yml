@@ -1,12 +1,17 @@
-include:
-  - tests/codeception/common
-  - tests/codeception/console
-  - tests/codeception/backend
-  - tests/codeception/api
-  - tests/codeception/frontend
-
+actor: Tester
 paths:
-  log: tests/codeception/_output
-
+    tests: tests
+    log: tests/_output
+    data: tests/_data
+    helpers: tests/_support
 settings:
-  colors: true
+    bootstrap: _bootstrap.php
+    colors: true
+    memory_limit: 1024M
+modules:
+    config:
+        Db:
+            dsn: ''
+            user: ''
+            password: ''
+            dump: tests/_data/dump.sql

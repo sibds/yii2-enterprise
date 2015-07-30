@@ -43,4 +43,6 @@ phpunit.phar
 
 ### PuPHPet ###
 html/
+
+### Codeception ###
 tests/_output/*
