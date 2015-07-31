@@ -22,7 +22,7 @@
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
         "bedezign/yii2-audit": "*",
-        "dektrium/yii2-user": "^1.0@dev",
+        "dektrium/yii2-user": "*",
         "dektrium/yii2-rbac": "dev-master",
         "dmstr/yii2-adminlte-asset": "2.*",
         "dmstr/yii2-migrate-command": "*"
