@@ -21,7 +21,7 @@ install:
 
 
 before_script:
-  - mysql -e 'CREATE DATABASE yii2_advanced_tests;';
+  - mysql -e 'CREATE DATABASE yii2enterprise;';
   - php yii migrate --interactive=0 && cd ../../..
 
 script:
