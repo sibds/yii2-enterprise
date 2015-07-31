@@ -21,7 +21,7 @@
         "yiisoft/yii2": ">=2.0.6",
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
-        "bedezign/yii2-audit": "*no",
+        "bedezign/yii2-audit": "*",
         "dektrium/yii2-user": "^1.0@dev",
         "dektrium/yii2-rbac": "dev-master",
         "dmstr/yii2-adminlte-asset": "2.*",
