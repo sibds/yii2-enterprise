@@ -32,7 +32,7 @@ install:
     ./init --env=Development
     sed -i s/root/travis/ common/config/main-local.php
     sed -i s/123// common/config/main-local.php
-    codecept build
+  - codecept build
 
 before_script:
   - mysql -e 'CREATE DATABASE yii2_enterprise_tests;';
