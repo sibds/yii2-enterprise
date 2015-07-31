@@ -95,7 +95,6 @@ vagrant up
 
 Open in browser: [http://192.168.56.101:1080/](http://192.168.56.101:1080/)
 
-
 INSTALLATION
 ------------
 
