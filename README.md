@@ -182,7 +182,9 @@ to use the [[yii\web\JsonParser]] for JSON input:
   `application/x-www-form-urlencoded` and `multipart/form-data` input formats.
   
 **IMPORTANT: without rbac/init you CAN'T LOG IN into backend**
+
 ### Demo user
+
 ~~~
 Login: webmaster
 Password: webmaster
