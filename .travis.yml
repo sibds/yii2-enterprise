@@ -22,17 +22,18 @@ cache:
     - $HOME/.composer/cache
 
 install:
-  - composer self-update
-  - composer global require fxp/composer-asset-plugin:~1.0
-  - composer install
+  - travis_retry composer self-update && composer --version
+  - travis_retry composer global require fxp/composer-asset-plugin:~1.0
+  - export PATH="$HOME/.composer/vendor/bin:$PATH"
+  - travis_retry composer install --dev --prefer-dist --no-interaction
 # codeception
-  - composer global require "codeception/codeception=2.0.*" "codeception/specify=*" "codeception/verify=*"
+  - travis_retry composer global require "codeception/codeception=2.0.*" "codeception/specify=*" "codeception/verify=*"
 # setup application:
   - |
     ./init --env=Development
     sed -i s/root/travis/ common/config/main-local.php
     sed -i s/123// common/config/main-local.php
-  - codecept build
+    codecept build
 
 before_script:
   - mysql -e 'CREATE DATABASE yii2_enterprise_tests;';
