@@ -30,6 +30,6 @@ Version 0.2
     * Change password
     * Profile
 * Integrated:
-    * extension for migration
+    * extension for create migration with data
     * extension for support "trash can" or soft delete
 

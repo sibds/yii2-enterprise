@@ -17,6 +17,8 @@ Scrunitizer:
 
 Information about develop: [https://trello.com/b/9VO2RT9g/yii2-enterprise](https://trello.com/b/9VO2RT9g/yii2-enterprise).
 
+[Roadmap](docs/roadmap.md)
+
 REQUIREMENTS
 ------------
 
