@@ -22,7 +22,7 @@ install:
 
 before_script:
   - mysql -e 'CREATE DATABASE yii2_advanced_tests;';
-  - cd tests/codeception/bin && php yii migrate --interactive=0 && cd ../../..
+  - php yii migrate --interactive=0 && cd ../../..
 
 script:
   - "wget http://codeception.com/codecept.phar"
