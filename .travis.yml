@@ -32,15 +32,16 @@ install:
     ./init --env=Development
     sed -i s/root/travis/ common/config/main-local.php
     sed -i s/123// common/config/main-local.php
+    codecept build
 
 before_script:
   - mysql -e 'CREATE DATABASE yii2_enterprise_tests;';
   - cd tests/codeception/bin && php yii migrate --interactive=0 && cd ../../..
 
 script:
-  - "wget http://codeception.com/codecept.phar"
-  - php ./codecept.phar build
-  - php ./codecept.phar run --coverage --xml
+  - |
+    php -S localhost:8080 > /dev/null 2>&1 &
+    codecept run --coverage --xml
 
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar
