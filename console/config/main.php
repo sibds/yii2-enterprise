@@ -10,6 +10,11 @@ return [
     'id' => 'app-console',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'controllerMap'       => [
+        'migrate' => [
+            'class' => 'dmstr\console\controllers\MigrateController'
+        ],
+    ],
     'controllerNamespace' => 'console\controllers',
     'components' => [
         'log' => [

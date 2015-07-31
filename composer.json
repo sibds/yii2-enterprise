@@ -21,10 +21,11 @@
         "yiisoft/yii2": ">=2.0.6",
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
-        "bedezign/yii2-audit": "^1.0",
+        "bedezign/yii2-audit": "*no",
         "dektrium/yii2-user": "^1.0@dev",
         "dektrium/yii2-rbac": "dev-master",
-        "dmstr/yii2-adminlte-asset": "2.*"
+        "dmstr/yii2-adminlte-asset": "2.*",
+        "dmstr/yii2-migrate-command": "*"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "^2.0@dev",

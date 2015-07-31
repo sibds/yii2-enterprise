@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dc9565d46e2d1458e618c64d451cd92a",
+    "hash": "bc0e4e95b89d2e17e98b1b9b0a2d6500",
     "packages": [
         {
             "name": "2amigos/yii2-chartjs-widget",
@@ -108,16 +108,16 @@
         },
         {
             "name": "bedezign/yii2-audit",
-            "version": "1.0.3",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bedezign/yii2-audit.git",
-                "reference": "303df150de8ab023561815bb48a95333fe9839e8"
+                "reference": "2367ec49f51b47b8d6f246be1b610e15069209a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bedezign/yii2-audit/zipball/303df150de8ab023561815bb48a95333fe9839e8",
-                "reference": "303df150de8ab023561815bb48a95333fe9839e8",
+                "url": "https://api.github.com/repos/bedezign/yii2-audit/zipball/2367ec49f51b47b8d6f246be1b610e15069209a9",
+                "reference": "2367ec49f51b47b8d6f246be1b610e15069209a9",
                 "shasum": ""
             },
             "require": {
@@ -165,7 +165,7 @@
                 "trail",
                 "yii2"
             ],
-            "time": "2015-07-29 04:58:04"
+            "time": "2015-07-31 10:40:36"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -705,6 +705,46 @@
             "time": "2015-06-25 01:41:38"
         },
         {
+            "name": "dmstr/yii2-migrate-command",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dmstr/yii2-migrate-command.git",
+                "reference": "308e4146628179d6f90dbed5f0df120cfcb9d311"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dmstr/yii2-migrate-command/zipball/308e4146628179d6f90dbed5f0df120cfcb9d311",
+                "reference": "308e4146628179d6f90dbed5f0df120cfcb9d311",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "dmstr\\console\\controllers\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Munk",
+                    "email": "tobias@diemeisterei.de"
+                }
+            ],
+            "description": "Console Migration Command with multiple paths/aliases support",
+            "keywords": [
+                "command",
+                "console",
+                "extension",
+                "migration",
+                "yii2"
+            ],
+            "time": "2015-04-14 17:14:33"
+        },
+        {
             "name": "ezyang/htmlpurifier",
             "version": "v4.6.0",
             "source": {
@@ -987,12 +1027,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "fa734b786ddefa9aa75ded97da1695abb465a91d"
+                "reference": "ac7adf53f1bc2226028ff0aa916b60d8beb8c4e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/fa734b786ddefa9aa75ded97da1695abb465a91d",
-                "reference": "fa734b786ddefa9aa75ded97da1695abb465a91d",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/ac7adf53f1bc2226028ff0aa916b60d8beb8c4e2",
+                "reference": "ac7adf53f1bc2226028ff0aa916b60d8beb8c4e2",
                 "shasum": ""
             },
             "require": {
@@ -1067,7 +1107,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-07-29 14:10:51"
+            "time": "2015-07-31 00:19:23"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -1220,12 +1260,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "cb5227389b60ca8303825172535778589d96e3f3"
+                "reference": "10b89bf195c552cc11206fb4812815e552a092f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/cb5227389b60ca8303825172535778589d96e3f3",
-                "reference": "cb5227389b60ca8303825172535778589d96e3f3",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/10b89bf195c552cc11206fb4812815e552a092f3",
+                "reference": "10b89bf195c552cc11206fb4812815e552a092f3",
                 "shasum": ""
             },
             "require": {
@@ -1259,7 +1299,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2015-07-28 06:21:00"
+            "time": "2015-07-30 07:07:01"
         },
         {
             "name": "yiisoft/yii2-swiftmailer",
@@ -2153,12 +2193,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-datepicker.git",
-                "reference": "368b181ef658c05707fe41dd16eee4d9ffd9da38"
+                "reference": "ef0eb81ee461955cf53cee007ed2328a6656c633"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-datepicker/zipball/368b181ef658c05707fe41dd16eee4d9ffd9da38",
-                "reference": "368b181ef658c05707fe41dd16eee4d9ffd9da38",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-datepicker/zipball/ef0eb81ee461955cf53cee007ed2328a6656c633",
+                "reference": "ef0eb81ee461955cf53cee007ed2328a6656c633",
                 "shasum": ""
             },
             "require": {
@@ -2194,7 +2234,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-07-19 04:49:03"
+            "time": "2015-07-30 12:11:14"
         },
         {
             "name": "kartik-v/yii2-widget-datetimepicker",
@@ -2300,12 +2340,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-fileinput.git",
-                "reference": "98fa590f051669fee9f8e5731e6604c058ae0901"
+                "reference": "77b2b355b52dd1b4487ed5143e4553d6f612c247"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-fileinput/zipball/98fa590f051669fee9f8e5731e6604c058ae0901",
-                "reference": "98fa590f051669fee9f8e5731e6604c058ae0901",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-fileinput/zipball/77b2b355b52dd1b4487ed5143e4553d6f612c247",
+                "reference": "77b2b355b52dd1b4487ed5143e4553d6f612c247",
                 "shasum": ""
             },
             "require": {
@@ -2342,7 +2382,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-07-21 03:34:31"
+            "time": "2015-07-30 12:13:45"
         },
         {
             "name": "kartik-v/yii2-widget-growl",
