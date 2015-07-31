@@ -159,7 +159,7 @@ Also check and edit the other files in the `config/` directory to customize your
 
 #### Apply migrations
 
-[How configure migrations.](https://github.com/sibds/yii2-enterprise/blob/master/docs/guide/configure-migrations.md)
+[How configure migrations.](docs/guide/configure-migrations.md)
 
 ```php
 php yii migrate
