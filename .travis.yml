@@ -4,7 +4,21 @@ php:
   - 5.4
   - 5.5
   - 5.6
+  - 7.0
   - hhvm
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - php: 7.0
+
+# faster builds on new travis setup not using sudo
+sudo: false
+
+# cache vendor dirs
+cache:
+  directories:
+    - $HOME/.composer/cache
 
 install:
   - composer self-update
@@ -15,14 +29,11 @@ install:
 # setup application:
   - |
     ./init --env=Development
-    sed -i s/root/travis/ common/config/main-local.php
-    sed -i "s/'cookieValidationKey' => ''/'cookieValidationKey' => 'testkey'/" frontend/config/main.php
-    sed -i "s/'cookieValidationKey' => ''/'cookieValidationKey' => 'testkey'/" backend/config/main.php
 
 
 before_script:
   - mysql -e 'CREATE DATABASE yii2enterprise;';
-  - php yii migrate --interactive=0 && cd ../../..
+  - php yii migrate --interactive=0
 
 script:
   - "wget http://codeception.com/codecept.phar"
