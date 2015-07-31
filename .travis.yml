@@ -40,8 +40,9 @@ before_script:
   - cd tests/codeception/bin && php yii migrate --interactive=0 && cd ../../..
 
 script:
-  - php -S localhost:8080 > /dev/null 2>&1
-  - codecept run --coverage --xml
+  - |
+    php -S localhost:8080 > /dev/null 2>&1 &
+    codecept run --coverage --xml
 
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar
