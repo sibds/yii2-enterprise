@@ -10,9 +10,14 @@ install:
   - composer self-update
   - composer global require fxp/composer-asset-plugin:~1.0
   - composer install
+# codeception
+  - composer global require "codeception/codeception=2.0.*" "codeception/specify=*" "codeception/verify=*"
+# setup application:
 
-#before_script:
-#  - mysql -e 'create database yii2_translateable_test;'
+
+before_script:
+  - mysql -e 'CREATE DATABASE yii2_advanced_tests;';
+  - cd tests/codeception/bin && php yii migrate --interactive=0 && cd ../../..
 
 script:
   - "wget http://codeception.com/codecept.phar"
