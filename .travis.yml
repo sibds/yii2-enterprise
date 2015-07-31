@@ -29,11 +29,14 @@ install:
 # setup application:
   - |
     ./init --env=Development
+    sed -i s/root/travis/ common/config/main-local.php
+    sed -i s/123// common/config/main-local.php
+
 
 
 before_script:
-  - mysql -e 'CREATE DATABASE yii2enterprise;';
-  - php yii migrate --interactive=0
+  - mysql -e 'CREATE DATABASE yii2_enterprise_tests;';
+  - cd tests/codeception/bin && php yii migrate --interactive=0 && cd ../../..
 
 script:
   - "wget http://codeception.com/codecept.phar"
