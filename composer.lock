@@ -1054,12 +1054,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "ac7adf53f1bc2226028ff0aa916b60d8beb8c4e2"
+                "reference": "039814a3c5b2164cf2dbff77fb200434f0c4246a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/ac7adf53f1bc2226028ff0aa916b60d8beb8c4e2",
-                "reference": "ac7adf53f1bc2226028ff0aa916b60d8beb8c4e2",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/039814a3c5b2164cf2dbff77fb200434f0c4246a",
+                "reference": "039814a3c5b2164cf2dbff77fb200434f0c4246a",
                 "shasum": ""
             },
             "require": {
@@ -1134,7 +1134,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-07-31 00:19:23"
+            "time": "2015-08-03 15:38:13"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -1515,12 +1515,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnitvn/yii2-ajaxcrud.git",
-                "reference": "181f037587044d4dfef4e713e1f5ef49d8db1303"
+                "reference": "89ceb624dcac43d9375f1ca927088d3954c91904"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnitvn/yii2-ajaxcrud/zipball/181f037587044d4dfef4e713e1f5ef49d8db1303",
-                "reference": "181f037587044d4dfef4e713e1f5ef49d8db1303",
+                "url": "https://api.github.com/repos/johnitvn/yii2-ajaxcrud/zipball/89ceb624dcac43d9375f1ca927088d3954c91904",
+                "reference": "89ceb624dcac43d9375f1ca927088d3954c91904",
                 "shasum": ""
             },
             "require": {
@@ -1561,7 +1561,7 @@
                 "template",
                 "yii2"
             ],
-            "time": "2015-07-28 09:24:12"
+            "time": "2015-08-02 11:57:36"
         },
         {
             "name": "kartik-v/bootstrap-fileinput",
@@ -2270,12 +2270,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-datepicker.git",
-                "reference": "ef0eb81ee461955cf53cee007ed2328a6656c633"
+                "reference": "1b6a83136dac1c29ac579b86236b11d0461d1395"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-datepicker/zipball/ef0eb81ee461955cf53cee007ed2328a6656c633",
-                "reference": "ef0eb81ee461955cf53cee007ed2328a6656c633",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-datepicker/zipball/1b6a83136dac1c29ac579b86236b11d0461d1395",
+                "reference": "1b6a83136dac1c29ac579b86236b11d0461d1395",
                 "shasum": ""
             },
             "require": {
@@ -2311,7 +2311,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-07-30 12:11:14"
+            "time": "2015-08-03 07:57:21"
         },
         {
             "name": "kartik-v/yii2-widget-datetimepicker",
@@ -3224,12 +3224,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PHPExcel.git",
-                "reference": "36eef2f16345a73b2e5c68b58bf10077b9e21d37"
+                "reference": "8f7c2fd4645ffebdb7d194742534c755579f4c10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/36eef2f16345a73b2e5c68b58bf10077b9e21d37",
-                "reference": "36eef2f16345a73b2e5c68b58bf10077b9e21d37",
+                "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/8f7c2fd4645ffebdb7d194742534c755579f4c10",
+                "reference": "8f7c2fd4645ffebdb7d194742534c755579f4c10",
                 "shasum": ""
             },
             "require": {
@@ -3276,7 +3276,7 @@
                 "xls",
                 "xlsx"
             ],
-            "time": "2015-07-16 21:29:15"
+            "time": "2015-08-02 23:33:29"
         },
         {
             "name": "yiisoft/yii2-codeception",
@@ -3376,12 +3376,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-gii.git",
-                "reference": "039bf69706f629dcabdf613f985a90cc10603843"
+                "reference": "552f9cb837b1ae0ab5e904aef7366ff191233a5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/039bf69706f629dcabdf613f985a90cc10603843",
-                "reference": "039bf69706f629dcabdf613f985a90cc10603843",
+                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/552f9cb837b1ae0ab5e904aef7366ff191233a5a",
+                "reference": "552f9cb837b1ae0ab5e904aef7366ff191233a5a",
                 "shasum": ""
             },
             "require": {
@@ -3421,7 +3421,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2015-07-28 06:19:22"
+            "time": "2015-08-02 17:00:44"
         }
     ],
     "aliases": [],

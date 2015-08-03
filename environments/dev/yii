@@ -27,6 +27,12 @@ $config = yii\helpers\ArrayHelper::merge(
     require(__DIR__ . '/console/config/main-local.php')
 );
 
+if($argv[1]=='migrate'){
+    unset($config['modules']['audit']);
+    unset($config['modules']['user']);
+    unset($config['modules']['rbac']);
+}
+
 $application = new yii\console\Application($config);
 $exitCode = $application->run();
 exit($exitCode);

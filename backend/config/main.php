@@ -36,8 +36,10 @@ return [
         'view' => [
             'theme' => [
                 'pathMap' => [
-                    '@app/views' => '@app/themes/adminlte'
+                    '@app/views' => '@app/themes/adminlte',
+                    '@app/modules' => '@app/themes/adminlte'
                 ],
+                'baseUrl' => '@app/themes/adminlte',
             ],
         ],
         'log' => [
