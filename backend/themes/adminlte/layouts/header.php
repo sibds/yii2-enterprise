@@ -239,7 +239,7 @@ use yii\bootstrap\NavBar;
                 </li>
                 */?>
                 <li>
-                    <?=Html::a('<i class="fa fa-life-ring"></i>', ['//support'], ['title'=>'Поддержка'])?>
+                    <?=Html::a('<i class="fa fa-life-ring"></i>', ['//support'], ['title'=>'Support'])?>
                 </li>
             </ul>
         </div>

@@ -28,7 +28,7 @@ use yii\helpers\ArrayHelper;
             [
                 ['label'=>'<i class="fa fa-dashboard"></i><span>Dashboard</span>', 'url'=>['//site/index']],
             ],
-            \backend\helpers\MenuModules::menu());
+            \mazurva\helpers\MenuModules::menu());
 
         $adminMenu=[];
         if(Yii::$app->user->identity->isAdmin){

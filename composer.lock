@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dfddb451cc1d76c6a2879330d7244cf1",
+    "hash": "fcd06ca9e9486d99d6cbfd59e69e497f",
     "packages": [
         {
             "name": "2amigos/yii2-chartjs-widget",
@@ -565,6 +565,62 @@
             "time": "2013-12-10 17:49:58"
         },
         {
+            "name": "cornernote/yii2-dashboard",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cornernote/yii2-dashboard.git",
+                "reference": "75387c6e5266cf43e035daa02e27ca1f6b32058c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cornernote/yii2-dashboard/zipball/75387c6e5266cf43e035daa02e27ca1f6b32058c",
+                "reference": "75387c6e5266cf43e035daa02e27ca1f6b32058c",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-sortable": "1.2.*",
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "2.*",
+                "yiisoft/yii2-bootstrap": "2.*"
+            },
+            "require-dev": {
+                "codeception/c3": "*",
+                "codeception/specify": "*",
+                "codeception/verify": "*",
+                "fxp/composer-asset-plugin": "1.*",
+                "heroku/heroku-buildpack-php": "*",
+                "scrutinizer/ocular": "~1.1",
+                "yiisoft/yii2-codeception": "2.*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "cornernote\\dashboard\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "cornernote\\dashboard\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Brett O'Donnell",
+                    "email": "cornernote@gmail.com",
+                    "homepage": "https://mrphp.com.au/"
+                }
+            ],
+            "description": "Dashboard manager for Yii2",
+            "keywords": [
+                "dashboard",
+                "yii2"
+            ],
+            "time": "2015-07-17 00:15:00"
+        },
+        {
             "name": "dektrium/yii2-rbac",
             "version": "dev-master",
             "source": {
@@ -862,6 +918,53 @@
             "time": "2015-06-16 05:19:57"
         },
         {
+            "name": "kartik-v/yii2-sortable",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-sortable.git",
+                "reference": "650dfd6876115fbb996eb6eb8f1d5d13ddb69285"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-sortable/zipball/650dfd6876115fbb996eb6eb8f1d5d13ddb69285",
+                "reference": "650dfd6876115fbb996eb6eb8f1d5d13ddb69285",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-krajee-base": "~1.7"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\sortable\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Create sortable lists and grids using HTML5 drag and drop API for Yii 2.0.",
+            "homepage": "https://github.com/kartik-v/yii2-sortable",
+            "keywords": [
+                "bootstrap",
+                "extension",
+                "jquery",
+                "range",
+                "sortable",
+                "widget",
+                "yii2"
+            ],
+            "time": "2015-06-17 17:34:48"
+        },
+        {
             "name": "kartik-v/yii2-widget-select2",
             "version": "dev-master",
             "source": {
@@ -908,6 +1011,49 @@
                 "yii2"
             ],
             "time": "2015-07-01 15:20:59"
+        },
+        {
+            "name": "mazurva/yii2-menumodules",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mazurva/yii2-menumodules.git",
+                "reference": "3caf9ae8f44e8751d6e6565d60dd117283215d35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mazurva/yii2-menumodules/zipball/3caf9ae8f44e8751d6e6565d60dd117283215d35",
+                "reference": "3caf9ae8f44e8751d6e6565d60dd117283215d35",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-components",
+            "autoload": {
+                "psr-4": {
+                    "mazurva\\helpers\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vadim Mazur",
+                    "email": "mazurva@gmail.com"
+                }
+            ],
+            "description": "Collector menu modules for applications Yii2",
+            "homepage": "https://github.com/mazurva/yii2-menumodules",
+            "keywords": [
+                "helpers",
+                "menu modules",
+                "yii2"
+            ],
+            "time": "2015-08-05 09:55:07"
         },
         {
             "name": "phpspec/php-diff",
@@ -1054,12 +1200,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "713cb8dcf12630875bf8202289fa55d9d9f412ab"
+                "reference": "d9ca44e2eb6b6d35b6517a474d9bfde2900835a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/713cb8dcf12630875bf8202289fa55d9d9f412ab",
-                "reference": "713cb8dcf12630875bf8202289fa55d9d9f412ab",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/d9ca44e2eb6b6d35b6517a474d9bfde2900835a6",
+                "reference": "d9ca44e2eb6b6d35b6517a474d9bfde2900835a6",
                 "shasum": ""
             },
             "require": {
@@ -1134,7 +1280,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-08-03 21:38:58"
+            "time": "2015-08-04 14:08:38"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -1142,12 +1288,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-authclient.git",
-                "reference": "35f3751f884e9f2a90de4f499baf603a86a8aeee"
+                "reference": "58aebac6e677657772917c558bff17fc9bb0de29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-authclient/zipball/35f3751f884e9f2a90de4f499baf603a86a8aeee",
-                "reference": "35f3751f884e9f2a90de4f499baf603a86a8aeee",
+                "url": "https://api.github.com/repos/yiisoft/yii2-authclient/zipball/58aebac6e677657772917c558bff17fc9bb0de29",
+                "reference": "58aebac6e677657772917c558bff17fc9bb0de29",
                 "shasum": ""
             },
             "require": {
@@ -1182,7 +1328,7 @@
                 "oauth",
                 "yii2"
             ],
-            "time": "2015-07-28 06:22:05"
+            "time": "2015-08-04 14:49:05"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -3428,6 +3574,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "dektrium/yii2-rbac": 20,
+        "mazurva/yii2-menumodules": 20,
         "yiisoft/yii2-codeception": 20
     },
     "prefer-stable": false,

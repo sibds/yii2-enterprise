@@ -16,6 +16,9 @@ return [
             // following line will restrict access to admin page
             'as backend' => 'backend\filters\BackendFilter',
         ],
+        'dashboard' => [
+            'class'=>'cornernote\dashboard\Module',
+        ],
     ],
     'components' => [
         'user' => [

@@ -5,5 +5,6 @@ return [
         "@bedezign/yii2/audit/migrations",
         "@dektrium/user/migrations",
         "@yii/rbac/migrations",
+        "@cornernote/dashboard/migrations",
     ],
 ];
