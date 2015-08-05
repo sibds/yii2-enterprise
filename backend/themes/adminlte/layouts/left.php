@@ -50,7 +50,7 @@ use yii\helpers\ArrayHelper;
             if(YII_DEBUG){
                 $adminMenu = ArrayHelper::merge($adminMenu,
                     [
-                        '<li class="header">Develop menu</li>',
+                        '<li class="header">Developer menu</li>',
                         ['label' => '<i class="fa fa-file-code-o"></i><span>Gii</span>', 'url' => ['/gii']],
                         ['label' => '<i class="fa fa-dashboard"></i><span>Debug</span>', 'url' => ['/debug']],
                     ]) ;
