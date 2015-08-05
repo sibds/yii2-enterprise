@@ -9,7 +9,7 @@ return [
             'class' => 'dektrium\user\Module',
             'confirmWithin' => 21600,
             'cost' => 12,
-            'admins' => ['admin']
+            'admins' => ['webmaster']
         ],
         'rbac' => [
             'class' => 'dektrium\rbac\Module',

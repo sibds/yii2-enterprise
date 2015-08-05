@@ -14,7 +14,7 @@ return [
     'modules' => [
         'user' => [
             // following line will restrict access to admin page
-            'as backend' => 'dektrium\user\filters\BackendFilter',
+            'as backend' => 'backend\filters\BackendFilter',
         ],
     ],
     'components' => [
