@@ -95,7 +95,7 @@ vagrant up
 
 ### MailCatcher
 
-Open in browser: [http://192.168.56.101:1080/](http://192.168.56.101:1080/)
+Open in browser: [http://yii2enterprise.dev:1080/](http://yii2enterprise.dev:1080/) or [http://192.168.56.101:1080/](http://192.168.56.101:1080/)
 
 INSTALLATION
 ------------

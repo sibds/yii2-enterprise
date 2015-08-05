@@ -1054,12 +1054,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "039814a3c5b2164cf2dbff77fb200434f0c4246a"
+                "reference": "713cb8dcf12630875bf8202289fa55d9d9f412ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/039814a3c5b2164cf2dbff77fb200434f0c4246a",
-                "reference": "039814a3c5b2164cf2dbff77fb200434f0c4246a",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/713cb8dcf12630875bf8202289fa55d9d9f412ab",
+                "reference": "713cb8dcf12630875bf8202289fa55d9d9f412ab",
                 "shasum": ""
             },
             "require": {
@@ -1134,7 +1134,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-08-03 15:38:13"
+            "time": "2015-08-03 21:38:58"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -3224,12 +3224,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PHPExcel.git",
-                "reference": "8f7c2fd4645ffebdb7d194742534c755579f4c10"
+                "reference": "663d9422056de325f388f9775cf609bcd9764dd7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/8f7c2fd4645ffebdb7d194742534c755579f4c10",
-                "reference": "8f7c2fd4645ffebdb7d194742534c755579f4c10",
+                "url": "https://api.github.com/repos/PHPOffice/PHPExcel/zipball/663d9422056de325f388f9775cf609bcd9764dd7",
+                "reference": "663d9422056de325f388f9775cf609bcd9764dd7",
                 "shasum": ""
             },
             "require": {
@@ -3276,7 +3276,7 @@
                 "xls",
                 "xlsx"
             ],
-            "time": "2015-08-02 23:33:29"
+            "time": "2015-08-03 18:40:16"
         },
         {
             "name": "yiisoft/yii2-codeception",
