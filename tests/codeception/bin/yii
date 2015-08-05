@@ -18,6 +18,13 @@ $config = yii\helpers\ArrayHelper::merge(
     require(dirname(__DIR__) . '/config/config.php')
 );
 
+// fix migration error
+if($argv[1]=='migrate'){
+    unset($config['modules']['audit']);
+    unset($config['modules']['user']);
+    unset($config['modules']['rbac']);
+}
+
 $application = new yii\console\Application($config);
 $exitCode = $application->run();
 exit($exitCode);
