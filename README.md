@@ -19,7 +19,7 @@ Information about develop: [https://trello.com/b/9VO2RT9g/yii2-enterprise](https
 
 [Roadmap](docs/roadmap.md)
 
-![Screenshot](docs/images/yii2-enterprise.png)
+![Screenshot](https://raw.githubusercontent.com/sibds/yii2-enterprise/master/docs/images/yii2-enterprise.png)
 
 REQUIREMENTS
 ------------
