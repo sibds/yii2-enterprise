@@ -36,8 +36,12 @@ use yii\helpers\ArrayHelper;
             $adminMenu = [
                 '<li class="header">Admin menu</li>',
                 [
-                    'label' => '<i class="glyphicon glyphicon-signal"></i><span>Audit</span>', //for basic
-                    'url' => ['/audit']
+                    'label' => '<i class="fa fa-signal"></i><span>Audit</span>', //for basic
+                    'url' => ['/audit/default/index']
+                ],
+                [
+                    'label' => '<i class="fa fa-users"></i><span>Users</span>', //for basic
+                    'url' => ['/user/admin/index']
                 ],
             ];
 
