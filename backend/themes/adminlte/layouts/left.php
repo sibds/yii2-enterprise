@@ -36,14 +36,8 @@ use yii\helpers\ArrayHelper;
             $adminMenu = [
                 '<li class="header">Admin menu</li>',
                 [
-                    'label' => '<i class="glyphicon glyphicon-log-in"></i><span>Sing in</span>', //for basic
-                    'url' => ['/site/login'],
-                    'visible' =>Yii::$app->user->isGuest
-                ],
-                [
-                    'label' => '<i class="glyphicon glyphicon-log-out"></i><span>Sing out</span>', //for basic
-                    'url' => ['/site/logout'],
-                    'visible' =>!Yii::$app->user->isGuest
+                    'label' => '<i class="glyphicon glyphicon-signal"></i><span>Audit</span>', //for basic
+                    'url' => ['/audit']
                 ],
             ];
 

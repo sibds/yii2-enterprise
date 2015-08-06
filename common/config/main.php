@@ -4,7 +4,9 @@ return [
     'name' => 'yii2-enterprise',
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'modules'=>[
-        'audit' => 'bedezign\yii2\audit\Audit',
+        'audit' => [
+            'class' => 'bedezign\yii2\audit\Audit'
+        ],
         'user' => [
             'class' => 'dektrium\user\Module',
             'confirmWithin' => 21600,

@@ -12,6 +12,15 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [
+        'audit' => [
+            // IP address or list of IP addresses with access to the viewer, null for everyone (if the IP matches)
+            'accessIps' => ['127.0.0.1', '192.168.*'],
+            // Role or list of roles with access to the viewer, null for everyone (if the user matches)
+            'accessRoles' => ['admin'],
+            // User ID or list of user IDs with access to the viewer, null for everyone (if the role matches)
+            'accessUsers' => [1, 2],
+            // more: https://bedezign.github.io/yii2-audit/docs/module-configuration/
+        ],
         'user' => [
             // following line will restrict access to admin page
             'as backend' => 'backend\filters\BackendFilter',
