@@ -1,10 +1,12 @@
-[![Stories in Ready](https://badge.waffle.io/sibds/yii2-enterprise.png?label=ready&title=Ready)](https://waffle.io/sibds/yii2-enterprise)
 Yii2 Enterprise Application Template
 ====================================
 
 Yii 2 Enterprise Application Template is a skeleton Yii 2 application best for rapidly creating enterprise projects.
 
 Basis on [wfcreations/yii2-app-api](https://github.com/wfcreations/yii2-app-api)
+
+Development:
+[![Stories in Ready](https://badge.waffle.io/sibds/yii2-enterprise.png?label=ready&title=Ready)](https://waffle.io/sibds/yii2-enterprise)
 
 [![GitHub stars](https://img.shields.io/github/stars/sibds/yii2-enterprise.svg)](https://github.com/sibds/yii2-enterprise/stargazers)
 [![Latest Stable Version](https://poser.pugx.org/sibds/yii2-enterprise/v/stable)](https://packagist.org/packages/sibds/yii2-enterprise) [![Total Downloads](https://poser.pugx.org/sibds/yii2-enterprise/downloads)](https://packagist.org/packages/sibds/yii2-enterprise) [![Latest Unstable Version](https://poser.pugx.org/sibds/yii2-enterprise/v/unstable)](https://packagist.org/packages/sibds/yii2-enterprise) [![License](https://poser.pugx.org/sibds/yii2-enterprise/license)](https://packagist.org/packages/sibds/yii2-enterprise)
