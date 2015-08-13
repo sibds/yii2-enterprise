@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/sibds/yii2-enterprise.png?label=ready&title=Ready)](https://waffle.io/sibds/yii2-enterprise)
 Yii2 Enterprise Application Template
 ====================================
 
