@@ -10,7 +10,7 @@ class m160219_091156_createUser extends Migration
 
         $tableName = \dektrium\user\models\User::tableName();
         $query = 'SELECT COUNT(*) FROM '.$tableName.' WHERE `username`=:username';
-        $count = Yii::$app->db->createCommand($query)->queryScalar();
+        $count = Yii::$app->db->createCommand($query, [':username'=>$userName])->queryScalar();
         if($count>0)
             return true;
 
