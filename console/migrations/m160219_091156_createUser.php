@@ -6,6 +6,9 @@ class m160219_091156_createUser extends Migration
 {
     public function up()
     {
+        if(isset($_SERVER['TRAVIS']))
+            return true;
+        
         $userName = 'webmaster';
 
         $tableName = \dektrium\user\models\User::tableName();
