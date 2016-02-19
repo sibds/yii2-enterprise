@@ -98,7 +98,7 @@ vagrant up
 
 ### MailCatcher
 
-Open in browser: [http://yii2enterprise.dev:1080/](http://yii2enterprise.dev:1080/) or [http://192.168.56.101:1080/](http://192.168.56.101:1080/)
+Open in browser: [http://yii2enterprise.dev:8025/](http://yii2enterprise.dev:8025/) or [http://192.168.56.101:8025/](http://192.168.56.101:8025/)
 
 INSTALLATION
 ------------
@@ -168,6 +168,16 @@ Also check and edit the other files in the `config/` directory to customize your
 ```php
 php yii migrate
 ```
+
+#### Problem with migrations
+1. Try comment in file `common/config/main.php` the following lines:
+```
+'audit' => [
+    'class' => 'bedezign\yii2\audit\Audit'
+],
+```
+after migration complition, uncomment these lines.
+
 
 ### Enabling JSON Input
 
