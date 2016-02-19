@@ -6,13 +6,20 @@ class m160219_091156_createUser extends Migration
 {
     public function up()
     {
+        $userName = 'webmaster';
+
+        $tableName = \dektrium\user\models\User::tableName();
+        $query = 'SELECT COUNT(*) FROM '.$tableName.' WHERE `username`=:username';
+        $count = Yii::$app->db->createCommand($query)->queryScalar();
+        if($count>0)
+            return true;
 
         $user = \Yii::createObject([
             'class'    => \dektrium\user\models\User::className(),
             'scenario' => 'create',
-            'username' => 'webmaster',
-            'password' => 'webmaster',
-            'email' => 'webmaster@yii2enterprise.dev',
+            'username' => $userName,
+            'password' => $userName,
+            'email' => $userName.'@yii2enterprise.dev',
         ]);
 
         return $user->create();
