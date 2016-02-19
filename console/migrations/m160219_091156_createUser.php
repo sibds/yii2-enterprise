@@ -7,15 +7,15 @@ class m160219_091156_createUser extends Migration
     public function up()
     {
         if(isset($_SERVER['TRAVIS']))
-            return true;
-        
+            return null;
+
         $userName = 'webmaster';
 
         $tableName = \dektrium\user\models\User::tableName();
         $query = 'SELECT COUNT(*) FROM '.$tableName.' WHERE `username`=:username';
         $count = \Yii::$app->db->createCommand($query, [':username'=>$userName])->queryScalar();
         if($count>0)
-            return true;
+            return null;
 
         $user = \Yii::createObject([
             'class'    => \dektrium\user\models\User::className(),
