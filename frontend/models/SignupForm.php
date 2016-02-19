@@ -28,6 +28,7 @@ class SignupForm extends Model
             ['email', 'filter', 'filter' => 'trim'],
             ['email', 'required'],
             ['email', 'email'],
+            ['email', 'string', 'max' => 255],
             ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been taken.'],
 
             ['password', 'required'],
@@ -42,17 +43,16 @@ class SignupForm extends Model
      */
     public function signup()
     {
-        if ($this->validate()) {
-            $user = new User();
-            $user->username = $this->username;
-            $user->email = $this->email;
-            $user->setPassword($this->password);
-            $user->generateAuthKey();
-            if ($user->save()) {
-                return $user;
-            }
+        if (!$this->validate()) {
+            return null;
         }
-
-        return null;
+        
+        $user = new User();
+        $user->username = $this->username;
+        $user->email = $this->email;
+        $user->setPassword($this->password);
+        $user->generateAuthKey();
+        
+        return $user->save() ? $user : null;
     }
 }

@@ -14,7 +14,7 @@ return [
             'transport' => [
                 'class' => 'Swift_SmtpTransport',
                 'host' => 'localhost',
-                'port' => '1025',
+                'port' => '8025',
             ],
             'viewPath' => '@common/mail',
             // send all mails to a file by default. You have to set

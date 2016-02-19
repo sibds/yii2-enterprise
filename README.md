@@ -22,6 +22,8 @@ Information about develop: [https://trello.com/b/9VO2RT9g/yii2-enterprise](https
 
 [Roadmap](docs/roadmap.md)
 
+Documentation is at [docs/guide/README.md](docs/guide/README.md).
+
 REQUIREMENTS
 ------------
 
@@ -50,14 +52,12 @@ backend
     views/               contains view files for the Web application
     web/                 contains the entry script and Web resources
 api
-    assets/              contains application assets such as JavaScript and CSS
     config/              contains api configurations
     controllers/         contains Web controller classes
     models/              contains api-specific model classes
     runtime/             contains files generated during runtime
     modules/             contains api versioning
     v1/                  contains module version 1
-    views/               contains view files for the Web application
     web/                 contains the entry script and Web resources
 frontend
     assets/              contains application assets such as JavaScript and CSS
