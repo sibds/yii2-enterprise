@@ -50,8 +50,9 @@ before_script:
 script:
   - |
     php -S localhost:8080 > /dev/null 2>&1 &
-# cd tests
     codecept run --coverage --xml
+# cd tests
+#    codecept run --coverage --xml
 
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar
