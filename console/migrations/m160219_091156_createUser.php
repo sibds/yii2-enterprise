@@ -6,7 +6,7 @@ class m160219_091156_createUser extends Migration
 {
     public function up()
     {
-        if(isset($_SERVER['TRAVIS']))
+        if(isset($_SERVER['TRAVIS'])||(isset($_SERVER['PWD'])&&strpos($_SERVER['PWD'], '/tests/')))
             return null;
 
         $userName = 'webmaster';
