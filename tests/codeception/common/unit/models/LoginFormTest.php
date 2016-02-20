@@ -13,7 +13,7 @@ use tests\codeception\common\fixtures\UserFixture;
  */
 class LoginFormTest extends DbTestCase
 {
-
+    /*
     use Specify;
 
     public function setUp()
@@ -77,7 +77,7 @@ class LoginFormTest extends DbTestCase
             expect('user should be logged in', Yii::$app->user->isGuest)->false();
         });
     }
-
+    */
     /**
      * @inheritdoc
      */
@@ -90,5 +90,4 @@ class LoginFormTest extends DbTestCase
             ],
         ];
     }
-
 }
