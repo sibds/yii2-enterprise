@@ -109,7 +109,7 @@ Extract the github archive file to a directory named `yii2-enterprise` that is d
 
 After extraction run
 ```
-php composer.phar global require "fxp/composer-asset-plugin:1.0.0"
+php composer.phar global require "fxp/composer-asset-plugin:~1.1.1"
 php composer.phar install
 ```
 
@@ -128,7 +128,7 @@ at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 You can then install this application template using the following command:
 
 ~~~
-composer global require "fxp/composer-asset-plugin:~1.0.0"
+composer global require "fxp/composer-asset-plugin:~1.1.1"
 php composer.phar create-project --prefer-dist --stability=dev sibds/yii2-enterprise app
 ~~~
 
